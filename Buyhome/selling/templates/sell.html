@@ -1,0 +1,418 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TAPmoving | Acceuil</title>
+    <meta name="description" content="GARO is a real-estate template">
+    <meta name="author" content="Kimarotec">
+    <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'assets/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontello.css' %}">
+    <link href="{% static 'assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/fonts/icon-7-stroke/css/helper.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap-select.min.css' %}"> 
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/icheck.min_all.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/price-range.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">  
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css' %}"> 
+    <link rel="stylesheet" href="{% static 'assets/css/wizard.css' %}"> 
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+    <body>
+
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+        <!-- Body content -->
+
+        <div class="header-connect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-8  col-xs-12">
+                        <div class="header-half header-call">
+                            <p>
+                                <span><i class="pe-7s-call"></i> +225 05 86 38 26 31</span>
+                                <span><i class="pe-7s-mail"></i> amateyaphoebe@gmail.com</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-md-offset-5  col-sm-3 col-sm-offset-1  col-xs-12">
+                        <div class="header-half header-social">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>              
+        <!--End top header -->
+
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse yamm" id="navigation">
+                    <div class="button navbar-right">
+                        <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('authentification')" data-wow-delay="0.4s">Login</button>
+                        <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('')" data-wow-delay="0.5s">Submit</button>
+                    </div>
+                    <ul class="main-nav nav navbar-nav navbar-right">
+                        <li class="dropdown ymm-sw " data-wow-delay="0.1s">
+                        </li>
+
+                        <li class="dropdown yamm-fw" data-wow-delay="0.1s">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h5>Home pages</h5>
+                                                <ul>
+                                                    <li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3">                                     
+                                            </div>
+                                            <div class="col-sm-3">
+                                                
+                                                <h5>Utilisateur</h5>
+                                                <ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.yamm-content -->
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+
+        <div class="page-head"> 
+            <div class="container">
+                <div class="row">
+                    <div class="page-head-content">
+                        <h1 class="page-title">Submit new property</h1>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End page header -->
+
+        <!-- property area -->
+        <div class="content-area submit-property" style="background-color: #FCFCFC;">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="wizard-container">
+        
+                        <div class="wizard-card ct-wizard-orange" id="wizardProperty">
+                            <form action="" method="post" enctype="multipart/form-data"> <!-- Ajout de l'attribut enctype pour le téléchargement de fichiers -->
+                                {% csrf_token %} <!-- Ajout du jeton CSRF pour la sécurité -->
+        
+                                <div class="wizard-header">
+                                    <h3>
+                                        <b>Submit</b> YOUR PROPERTY <br>
+                                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
+                                    </h3>
+                                </div>
+        
+                                <ul>
+                                    <li><a href="#step1" data-toggle="tab">Step 1</a></li>
+                                    <li><a href="#step2" data-toggle="tab">Step 2</a></li>
+                                    <li><a href="#step4" data-toggle="tab">Finished</a></li>
+                                </ul>
+        
+                                <div class="tab-content">
+        
+                                    <div class="tab-pane" id="step1">
+                                        <div class="row p-b-15">
+                                            <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
+                                            <div class="col-sm-4 col-sm-offset-1">
+                                                <div class="picture-container">
+                                                    <div class="picture">
+                                                        <img src="{% static 'assets/img/default-property.jpg' %}" class="picture-src" id="wizardPicturePreview" title="" required>
+                                                        <input type="file" name="image" id="wizard-picture">
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="name">Property name <small>(required)</small></label>
+                                                    <input name="name" type="text" class="form-control" placeholder="Super villa ..." required>
+                                                </div>
+        
+                                                <div class="form-group">
+                                                    <label for="price">Property price <small>(required)</small></label>
+                                                    <input name="price" type="text" class="form-control" placeholder="3330000" required>
+                                                </div> 
+                                                <div class="form-group">
+                                                    <label for="phone">Telephone <small>(empty if you wanna use default phone number)</small></label>
+                                                    <input name="phone" type="text" class="form-control" placeholder="+1 473 843 7436" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  End step 1 -->
+        
+                                    <div class="tab-pane" id="step2">
+                                        <h4 class="info-text"> How much your Property is Beautiful ? </h4>
+                                        <div class="row">
+                                            <div class="col-sm-12"> 
+                                                <div class="col-sm-12"> 
+                                                    <div class="form-group">
+                                                        <label for="description">Property Description :</label>
+                                                        <textarea name="description" class="form-control" required></textarea>
+                                                    </div> 
+                                                </div> 
+                                            </div>
+        
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="state">Property State :</label>
+                                                        <select name="state" id="state" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your state" required>
+                                                            <option>Cote d`ivoire</option>
+                                                            <option>Benin</option>
+                                                            <option>costa rica</option>
+                                                            <option>Maroc</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="city">Property City :</label>
+                                                        <select name="city" id="city" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city" required>
+                                                            <option>Yamssoukro</option>
+                                                            <option>Abidjan</option>
+                                                            <option>Parakou</option>
+                                                            <option>tamrindo</option>
+                                                            <option>Marraekch</option>                                                
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="status">Property Status :</label>
+                                                        <select name="status" id="status" class="selectpicker show-tick form-control">
+                                                            <option> -Status- </option>
+                                                            <option>Available</option>
+                                                            <option>Sold</option>
+                                                            <!-- Add other options if needed -->
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 padding-top-15">                                                   
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label for="bedrooms">Min bed :</label>
+                                                        <input name="bedrooms" type="text" class="span2" value="" data-slider-min="1" 
+                                                               data-slider-max="600" data-slider-step="5" 
+                                                               data-slider-value="[0,5]" id="bedrooms" ><br />
+                                                        <b class="pull-left color">0</b> 
+                                                        <b class="pull-right color">5</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label for="bathrooms">Min baths :</label>
+                                                        <input name="bathrooms" type="text" class="span2" value="" data-slider-min="1" 
+                                                               data-slider-max="600" data-slider-step="5" 
+                                                               data-slider-value="[0,5]" id="bathrooms" ><br />
+                                                        <b class="pull-left color">0</b> 
+                                                        <b class="pull-right color">5</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label for="properties_geo">Property geo (m2) :</label>
+                                                        <input name="properties_geo" type="text" class="span2" value="" data-slider-min="0" 
+                                                               data-slider-max="1200" data-slider-step="5" 
+                                                               data-slider-value="[0,1200]" id="properties_geo" ><br />
+                                                        <b class="pull-left color">0m</b> 
+                                                        <b class="pull-right color">1200m</b>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                            <div class="col-sm-12 padding-top-15">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" name="swimming_pool"> Swimming Pool
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" name="emergency_exit"> Emergency Exit
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                 
+                                            </div> 
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <!-- End step 2 -->
+        
+                                    <div class="tab-pane" id="step4">                                        
+                                        <h4 class="info-text"> Finished and submit </h4>
+                                        <div class="row">  
+                                            <div class="col-sm-12">
+                                                <div class="">
+                                                    <p>
+                                                        <label><strong>Terms and Conditions</strong></label>
+                                                        Es tu sur de vouloir vendre ta maison?
+                                                    </p>
+        
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" name="terms_and_conditions" required> <strong>Accept termes and conditions.</strong>
+                                                        </label>
+                                                    </div> 
+        
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  End step 4 -->
+        
+                                </div>
+        
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                        <input type='button' class='btn btn-next btn-primary' name='next' value='Next' />
+                                        <input type='submit' class='btn btn-finish btn-primary ' name='finish' value='Finish' />
+                                    </div>
+        
+                                    <div class="pull-left">
+                                        <input type='button' class='btn btn-previous btn-default' name='previous' value='Previous' />
+                                    </div>
+                                    <div class="clearfix"></div>                                            
+                                </div>	
+                            </form>
+                        </div>
+                        <!-- End submit form -->
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+
+
+         
+           <!-- Footer area-->
+           <div class="footer-area">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- Contenu du pied de page -->
+                        <!-- Colonne 1 -->
+                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                            <div class="single-footer">
+                                <h4>En ce qui nous concerne</h4>
+                                <div class="footer-title-line"></div>
+                                <img src="{% static 'assets/img/footer-logo.png' %}" alt="" class="wow pulse" data-wow-delay="1s">
+                                <p>Soit heureux de ce site.</p>
+                                <ul class="footer-adress">
+                                    <li><i class="pe-7s-mail strong"></i> amateyaphoebe@gmail.com</li>
+                                    <li><i class="pe-7s-call strong"></i>+225 05 86 38 26 31</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Colonne 2 -->
+                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                        </div>
+                        <!-- Colonne 3 -->
+                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                        </div>
+                        <!-- Colonne 4 -->
+                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                            <div class="single-footer news-letter">
+                                <h4>Stay in touch</h4>
+                                <div class="footer-title-line"></div>
+                                <p>Lorem ipsum dolor sit amet, nulla suscipit similique quisquam molestias. Vel unde, blanditiis.</p>
+                                <form>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="E-mail ...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary subscribe" type="button"><i class="pe-7s-paper-plane pe-2x"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+                                <div class="social pull-right">
+                                    <!-- Insérez vos liens vers les réseaux sociaux ici -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pied de page inférieur -->
+            <div class="footer-copy text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="pull-left">
+                            <span>(C) <a href="http://www.KimaroTec.com">KimaroTheme</a>, All rights reserved 2016</span>
+                        </div>
+                        <div class="bottom-menu pull-right">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Property</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Liens vers les fichiers JavaScript -->
+        <script src="{% static 'assets/js/vendor/modernizr-2.6.2.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery-1.10.2.min.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap-select.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap-hover-dropdown.js' %}"></script>
+        <script src="{% static 'assets/js/easypiechart.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.easypiechart.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'assets/js/wow.js' %}"></script>
+        <script src="{% static 'assets/js/icheck.min.js' %}"></script>
+        <script src="{% static 'assets/js/price-range.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.bootstrap.wizard.js' %}" type="text/javascript"></script>
+        <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'assets/js/wizard.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>

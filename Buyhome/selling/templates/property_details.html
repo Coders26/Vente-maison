@@ -1,0 +1,365 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TAPmoving | Acceuil</title>
+    <meta name="description" content="GARO is a real-estate template">
+    <meta name="author" content="Kimarotec">
+    <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'assets/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontello.css' %}">
+    <link href="{% static 'assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/fonts/icon-7-stroke/css/helper.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap-select.min.css' %}"> 
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/icheck.min_all.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/price-range.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">  
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css' %}"> 
+    <link rel="stylesheet" href="{% static 'assets/css/wizard.css' %}"> 
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+    <body>
+
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+        <!-- Body content -->
+
+        <div class="header-connect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-8  col-xs-12">
+                        <div class="header-half header-call">
+                            <p>
+                                <span><i class="pe-7s-call"></i> +225 05 86 38 26 31</span>
+                                <span><i class="pe-7s-mail"></i> amateyaphoebe@gmail.com</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-md-offset-5  col-sm-3 col-sm-offset-1  col-xs-12">
+                        <div class="header-half header-social">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>              
+        <!--End top header -->
+
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse yamm" id="navigation">
+                    <div class="button navbar-right">
+                        <button class="navbar-btn nav-button wow bounceInRight login" onclick="window.location.href='{% url 'authentification' %}'" data-wow-delay="0.4s">Login</button>
+                        <button class="navbar-btn nav-button wow fadeInRight" onclick="window.location.href='{% url 'sell' %}'" data-wow-delay="0.5s">Submit</button>
+                    </div>
+                    <ul class="main-nav nav navbar-nav navbar-right">
+                        <li class="dropdown ymm-sw " data-wow-delay="0.1s">
+                            <a href="{% url 'properties_list' %}" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Home <b class="caret"></b></a>
+                        </li>
+
+                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="{% url 'properties_list' %}">Liste des maisons</a></li>
+                        <li class="dropdown yamm-fw" data-wow-delay="0.1s">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h5>Home pages</h5>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{% url 'properties_list' %}">Home </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3">                                     
+                                            </div>
+                                            <div class="col-sm-3">
+                                                
+                                                <h5>Utilisateur</h5>
+                                                <ul>
+                                                    <li><a href="{%url 'signup' %}">Register / login</a>   </li>
+                                                    <li><a href="{%url 'user_properties' %}">Your properties</a>  </li>
+                                                    <li><a href="{%url 'sell' %}">Submit property</a>  </li>                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.yamm-content -->
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+
+        <div class="page-head"> 
+            <div class="container">
+                <div class="row">
+                    <div class="page-head-content">
+                        <h1 class="page-title">Super nice villa </h1>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End page header -->
+
+        <!-- property area -->
+<div class="content-area single-property" style="background-color: #FCFCFC;">
+    <div class="container">
+        <div class="clearfix padding-top-40">
+            <div class="col-md-8 single-property-content prp-style-1">
+                <div class="row">
+                    <div class="light-slide-item">
+                        <div class="clearfix">
+
+                            <!-- Gallery -->
+                            <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                                <!-- You can dynamically generate the gallery items based on property images -->
+                                <li data-thumb="assets/img/property-1/property1.jpg">
+                                    <img src="{{ properties.image.url }}" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-property-wrapper">
+                    <div class="single-property-header">
+                        <!-- Property Title and Price -->
+                        <h1 class="property-title pull-left">{{ property.name }}</h1>
+                        <span class="property-price pull-right">${{ property.price }}</span>
+                    </div>
+
+                    <!-- Property Meta Information -->
+                    <div class="property-meta entry-meta clearfix ">
+                        <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
+                            <span class="property-info-icon icon-tag">
+                                 <img src="{% static 'img/icon/sale-orange.png' %}">
+                            </span>
+                            <span class="property-info-entry">
+                                <span class="property-info-label">Status</span>
+                                <span class="property-info-value">For Sale</span>
+                            </span>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
+                            <span class="property-info icon-area">
+                                <img src="{% static 'img/icon/room-orange.png' %}">
+                            </span>
+                            <span class="property-info-entry">
+                                <span class="property-info-label">Area</span>
+                                <span class="property-info-value">{{ property.property_geo }}<b class="property-info-unit">Sq Ft</b></span>
+                            </span>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
+                            <span class="property-info-icon icon-bed">
+                                <img src="{% static 'img/icon/bed-orange.png' %}">
+                            </span>
+                            <span class="property-info-entry">
+                                <span class="property-info-label">Bedrooms</span>
+                                <span class="property-info-value">{{ property.min_bed }}</span>
+                            </span>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
+                            <span class="property-info-icon icon-bath">
+                                <img src="{% static 'img/icon/os-orange.png' %}">
+                            </span>
+                            <span class="property-info-entry">
+                                <span class="property-info-label">Bathrooms</span>
+                                <span class="property-info-value">{{ property.min_baths }}</span>
+                            </span>
+                        </div>
+
+                        <form method="post" action="{% url 'buy_property' property.id %}">
+                            {% csrf_token %}
+                            <input type="hidden" name="property_id" value="{{ property.id }}">
+                            <button type="submit">Acheter</button>
+                        </form>
+                        
+                    </div>
+                    <!-- .property-meta -->
+<!-- Dans le fichier HTML de la page de détails de la maison -->
+                    <!-- Property Description -->
+                    <div class="section">
+                        <h4 class="s-property-title">Description</h4>
+                        <div class="s-property-content">
+                            <p>{{ property.description }}</p>
+                        </div>
+                    </div>
+                    <!-- End description area  -->
+
+                    <!-- Additional Details -->
+                    <div class="section additional-details">
+                        <h4 class="s-property-title">Additional Details</h4>
+                        <ul class="additional-details-list clearfix">
+                            <!-- Add dynamically generated additional details here based on property attributes -->
+                            <li>
+                                <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">Swimming Pool</span>
+                                <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                                {% if property.swimming_pool %}
+                                    Yes
+                                {% else %}
+                                    No
+                                {% endif %}
+                                                                </span>
+                            </li>
+                            <li>
+                                <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">Emergency Exit</span>
+                                <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                                {% if property.emergency_exit %}
+                                    Yes
+                                {% else %}
+                                    No
+                                {% endif %}                                
+                                </span>
+                            </li>
+                            <!-- Add more dynamically generated additional details here as needed -->
+                        </ul>
+                    </div>
+                    <!-- End additional-details area  -->
+
+                    <!-- Property Video -->
+                    <div class="section property-video">
+                        <h4 class="s-property-title">Message</h4>
+                        <div class="video-thumb">
+                            {% if messages %}
+                            <div class="alert alert-danger" role="alert">
+                                {% for message in messages %}
+                                {{ message }}
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                                                 
+                     </div>
+                    </div>
+                    <!-- End video area  -->
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4 p0">
+                <aside class="sidebar sidebar-property blog-asside-right">
+                    <!-- You can add agent details or any other relevant information here -->
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+          <!-- Footer area-->
+          <div class="footer-area">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- Contenu du pied de page -->
+                        <!-- Colonne 1 -->
+                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                            <div class="single-footer">
+                                <h4>About us</h4>
+                                <div class="footer-title-line"></div>
+                                <img src="{% static 'assets/img/footer-logo.png' %}" alt="" class="wow pulse" data-wow-delay="1s">
+                                <p>Lorem ipsum dolor cum necessitatibus su quisquam molestias. Vel unde, blanditiis.</p>
+                                <ul class="footer-adress">
+                                    <li><i class="pe-7s-map-marker strong"></i> 9089 your adress her</li>
+                                    <li><i class="pe-7s-mail strong"></i> email@yourcompany.com</li>
+                                    <li><i class="pe-7s-call strong"></i> +1 908 967 5906</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Colonne 2 -->
+                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                        </div>
+                        <!-- Colonne 3 -->
+                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                        </div>
+                        <!-- Colonne 4 -->
+                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                            <div class="single-footer news-letter">
+                                <h4>Stay in touch</h4>
+                                <div class="footer-title-line"></div>
+                                <p>Lorem ipsum dolor sit amet, nulla suscipit similique quisquam molestias. Vel unde, blanditiis.</p>
+                                <form>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="E-mail ...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary subscribe" type="button"><i class="pe-7s-paper-plane pe-2x"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+                                <div class="social pull-right">
+                                    <!-- Insérez vos liens vers les réseaux sociaux ici -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pied de page inférieur -->
+            <div class="footer-copy text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="pull-left">
+                            <span>(C) <a href="http://www.KimaroTec.com">KimaroTheme</a>, All rights reserved 2016</span>
+                        </div>
+                        <div class="bottom-menu pull-right">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Property</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Liens vers les fichiers JavaScript -->
+        <script src="{% static 'assets/js/vendor/modernizr-2.6.2.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery-1.10.2.min.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap-select.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap-hover-dropdown.js' %}"></script>
+        <script src="{% static 'assets/js/easypiechart.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.easypiechart.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'assets/js/wow.js' %}"></script>
+        <script src="{% static 'assets/js/icheck.min.js' %}"></script>
+        <script src="{% static 'assets/js/price-range.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.bootstrap.wizard.js' %}" type="text/javascript"></script>
+        <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'assets/js/wizard.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
